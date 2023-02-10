@@ -197,7 +197,7 @@
 
 @media print{
     @page{
-        size: 21.59cm 27.94cm;
+        size: 27.94cm 21.59cm;
         margin: 0cm;
     }
     .section_left{

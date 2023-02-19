@@ -89,7 +89,7 @@
 .content_prices{
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin: 5px;
 }
 
 .b_delete_product{
@@ -121,7 +121,7 @@
     border-radius: 8px;
     border: none;
     background-color: rgb(229, 229, 229);
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 #b_submit{
@@ -176,15 +176,30 @@
     height: 2.5cm;
     border: solid 1px black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.3cm;
+}
+
+.p_1{
+    width: 7cm;
+    height: 2.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.p_2{
+    width: 3.5cm;
+    height: 2.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .desc_price{
     font-family: Futura-bold;
     margin-left: 20px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 

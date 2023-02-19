@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styless.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Precios 2</title>
+</head>
+<body>
+    <section class="section_main">
+        <div class="content_title">
+            <h1 id="title">Ingrese el producto, precio y cantidad</h1>
+            <div id="form_add">
+                <label for="qty" id="label_input_numbre">Agregar: </label>
+                <input type="number" id="qty">
+                <button onclick='generate_fields()' id="b_add">+</button>
+            </div>
+        </div>
+        <div class="content_products">
+        </div>
+        <button id="b_submit" onclick="print_prices()">Imprimir</button>
+    </section>
+    <section class="section_print">
+        <!-- <div class="price_2">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.4cm" height="11.4cm" viewBox="0 0 92.972603 92.972588" class="logo_svg">
+                    <path d="M93.297 146.432c0 24.569-19.917 44.486-44.486 44.486H4.324v-44.486c0-24.57 19.917-44.487 44.487-44.487 24.569 0 44.486 19.918 44.486 44.487z" style="fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-2.324 -99.945)"/>
+                </svg>
+                <div class="cont_num_price"><p class="num_price">8,50</p></div>
+            </div>
+            <div class="content_desc"><p class="desc_2">JARRA DE VIDRIO<br>VARIAS REFERENCIAS</p></div>
+        </div> -->
+        <!-- <div class="price_2">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11.4cm" height="11.4cm" viewBox="0 0 92.972603 92.972588" class="logo_svg">
+                    <path d="M93.297 146.432c0 24.569-19.917 44.486-44.486 44.486H4.324v-44.486c0-24.57 19.917-44.487 44.487-44.487 24.569 0 44.486 19.918 44.486 44.487z" style="fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="translate(-2.324 -99.945)"/>
+                </svg>
+            </div>
+            <div class="content_desc"><p class="desc_2">JARRA DE VIDRIO <br>VARIAS REFERENCIAS</p></div>
+        </div> -->
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/script_one.js"></script>
+</body>
+</html>

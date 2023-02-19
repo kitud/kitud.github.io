@@ -1,0 +1,113 @@
+@font-face{
+    font-family: Futura;
+    src: url("../src/font/Futura_Std_Book.otf");
+}
+
+@font-face {
+    font-family: Futura-bold;
+    src: url("../src/font/Futura_Std_Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Futura;
+}
+
+body{
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section_main{
+    width: 35%;
+    height: 100%;
+    border: solid 1px gray;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1.5%;
+    color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    overflow: hidden;
+}
+
+.section_print{
+    visibility: hidden;
+}
+
+.price_2{
+    width: 21.59cm;
+    height: 13.9cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.price_2_m_b{
+    margin-bottom: 2cm;
+}
+
+.logo{
+    width: 21.59cm;
+    height: 11.4cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cont_num_price{
+    position: absolute;
+    top: 1.9cm;
+    left: 5.7cm;
+    width: 10cm;
+    height: 8.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num_price{
+    font-family: Futura-bold;
+    font-size: 7cm;
+}
+
+.content_desc{
+    width: 21.59cm;
+    height: 2.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc_2{
+    font-family: Futura-bold;
+    font-size: 1.5cm;
+    text-align: center;
+    max-width: 18cm;
+}
+
+@media print{
+    @page{
+        size: 21.54cm 27.94cm;
+        margin: 0.5cm;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    .section_main{
+        display: none;
+    }
+
+    .section_print{
+        display: inline;
+        visibility: visible;
+    }
+}

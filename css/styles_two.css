@@ -19,7 +19,7 @@ body{
     padding: 2%;
     width: 100vw;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .section_main{
@@ -44,6 +44,8 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 3.97cm;
+    visibility: hidden;
+    /* display: none; */
 }
 
 .price1{
@@ -104,14 +106,15 @@ body{
 
     body{
         padding: 0;
+        overflow: visible;
     }
 
     .section_main{
         display: none;
     }
 
-    /* .section_print{
-        display: inline;
+    .section_print{
         visibility: visible;
-    } */
+        /* display: inline; */
+    }
 }

@@ -1,5 +1,4 @@
-
-let num = 0
+let num = 0;
 
 function print_prices(){
     num = 0;
@@ -22,34 +21,35 @@ function generate_prices(){
             for (j=0; j < product.length-2; j+=1){
                 text += `${product[j]} `;
             }
-            text += '\nVARIAS REFERENCIAS';
+            // text += '\nVARIAS REFERENCIAS';
+            // alert(text + product[product.length-2]);
             create_price(text, product[product.length-2]);
         }
     }
 }
 
 function create_price(description, price_num){
-    const price_2 = document.createElement("div");
-    price_2.classList.add("price_2");
+    const price1 = document.createElement("div");
+    price1.classList.add("price1");
 
-    if (num%2 == 0) {
-        price_2.setAttribute("style", "margin-bottom: 0.4cm");
-    }else if(num%2 == 1){
-        price_2.setAttribute("style", "margin-bottom: 1cm");
-    }
-    num += 1;
+    // if (num%2 == 0) {
+    //     price_2.setAttribute("style", "margin-bottom: 0.4cm");
+    // }else if(num%2 == 1){
+    //     price_2.setAttribute("style", "margin-bottom: 1cm");
+    // }
+    // num += 1;
 
-    document.querySelector(".section_print").appendChild(price_2);
+    document.querySelector(".section_print").appendChild(price1);
 
     const logo = document.createElement("div");
     logo.classList.add("logo");
-    price_2.appendChild(logo);
+    price1.appendChild(logo);
 
     const NS = 'http://www.w3.org/2000/svg';
 
     const svg_logo = document.createElementNS(NS, 'svg');
-    svg_logo.setAttributeNS(null, 'width', '11.4cm');
-    svg_logo.setAttributeNS(null, 'height', '11.4cm');
+    svg_logo.setAttributeNS(null, 'width', '7.4cm');
+    svg_logo.setAttributeNS(null, 'height', '7.4cm');
     svg_logo.setAttributeNS(null, 'viewBox', '0 0 92.972603 92.972588');
     svg_logo.classList.add('logo_svg');
     logo.appendChild(svg_logo);
@@ -69,19 +69,25 @@ function create_price(description, price_num){
     num_price.textContent = price_num;
     cont_num_price.appendChild(num_price);
 
-    reduce_font_width(num_price, 320);
+    reduce_font_width(num_price, 200);
 
     const content_desc = document.createElement("div");
     content_desc.classList.add("content_desc");
-    price_2.appendChild(content_desc);
+    price1.appendChild(content_desc);
 
     const desc_2 = document.createElement("p");
     desc_2.classList.add("desc_2");
     desc_2.innerText = description;
     content_desc.appendChild(desc_2);
 
-    reduce_font_height(desc_2, 85);
-    reduce_font_width(desc_2, 580)
+    reduce_font_height(desc_2, 70);
+    // reduce_font_width(desc_2, 360);
+
+    if (num == 3){
+        price1.classList.add("page_break");
+        num = -1;
+    }
+    num+= 1;
 }
 
 function reduce_font_height(p_text, limit){

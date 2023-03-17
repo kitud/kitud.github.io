@@ -1,7 +1,12 @@
 @media print{
     @page{
-        size: landscape;
+        size: 27.94cm 21.59cm;
         margin: 0cm;
+    }
+
+    .container{
+        padding: 0;
+        overflow: visible;
     }
     .section_left{
         display:none;
@@ -9,22 +14,25 @@
     .section_right{
         width: 100%;
         border: none;
+        padding-top: 0.295cm;
+        visibility: visible;
     }
     .products{
         width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
+        justify-content: center;
         flex: none;
     }
     .content_price{
-        margin-bottom: 0.3cm;
+        /* margin-bottom: 0.3cm; */
     }
     #b_print{
         display: none;
     }
     .page_break{
-        margin-top: 2cm;
+        margin-bottom: 0.59cm;
     }
 }

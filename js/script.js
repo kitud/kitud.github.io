@@ -59,11 +59,19 @@ function generate_prices(){
             content_price.classList.add(string_num_product);
             document.querySelector(".products").appendChild(content_price);
             
-            if (num_print == 14 || num_print == 15){
+            // if (num_print == 14 || num_print == 15){
+            //     content_price.classList.add("page_break");
+            //     if (num_print == 15){
+            //         num_print = 1;
+            //     }
+            // }
+
+            if (num_print == 13){
                 content_price.classList.add("page_break");
-                if (num_print == 15){
-                    num_print = 1;
-                }
+                num_print = -1;
+                // if (num_print == 17){
+                //     num_print = 1;
+                // }
             }
 
             const desc_price = document.createElement("p");
@@ -80,13 +88,30 @@ function generate_prices(){
             price.textContent = product[product.length-2];
             content_price.appendChild(document.createElement("div").appendChild(price))
 
-            while ((desc_price.clientWidth / 36.8).toFixed(1) > 7 || (desc_price.clientHeight / 36.8).toFixed(1) > 2){
-                let f_size = parseInt(window.getComputedStyle(desc_price).getPropertyValue("font-size")) - 1;
-                desc_price.setAttribute("style", `font-size: ${f_size}px`);
-            }
+            // while ((desc_price.clientWidth / 36.8).toFixed(1) > 7 || (desc_price.clientHeight / 36.8).toFixed(1) > 2){
+            //     let f_size = parseInt(window.getComputedStyle(desc_price).getPropertyValue("font-size")) - 1;
+            //     desc_price.setAttribute("style", `font-size: ${f_size}px`);
+            // }
+
+            reduce_font_height(desc_price, 100);
+            reduce_font_width(price, 120);
 
             num_print+=1;
         }
     }
-    
+    print_section();
+}
+
+function reduce_font_height(p_text, limit){
+    while(p_text.clientHeight > limit){
+        let f_size = parseInt(window.getComputedStyle(p_text).getPropertyValue("font-size")) - 1;
+        p_text.setAttribute("style", `font-size: ${f_size}px`);
+    }
+}
+
+function reduce_font_width(p_text, limit){
+    while(p_text.clientWidth > limit){
+        let f_size = parseInt(window.getComputedStyle(p_text).getPropertyValue("font-size")) - 1;
+        p_text.setAttribute("style", `font-size: ${f_size}px`);
+    }
 }

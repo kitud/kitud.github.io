@@ -1,0 +1,117 @@
+@font-face{
+    font-family: Futura;
+    src: url("../src/font/Futura_Std_Book.otf");
+}
+
+@font-face {
+    font-family: Futura-bold;
+    src: url("../src/font/Futura_Std_Bold.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Futura;
+}
+
+body{
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.section_main{
+    width: 35%;
+    height: 100%;
+    border: solid 1px gray;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1.5%;
+    color: rgb(52, 52, 52);
+    display: flex;
+    flex-direction: column;
+    border: solid 1px gray;
+    overflow: hidden;
+}
+
+.section_print{
+    width: 21.59cm;
+    /* height: 27.94cm; */
+    /* background-color: lightblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3.97cm;
+}
+
+.price1{
+    width: 10cm;
+    height: 10cm;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 0.4cm;
+    border: solid 1px gray;
+}
+
+.cont_num_price{
+    position: absolute;
+    top: 0.6cm;
+    left: 1.1cm;
+    width: 7.4cm;
+    height: 7.4cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 160, 122, 0.362); */
+}
+
+.num_price{
+    font-family: Futura-bold;
+    font-size: 5cm;
+}
+
+.content_desc{
+    width: 10cm;
+    height: 2.2cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightseagreen; */
+}
+
+.desc_2{
+    font-family: Futura-bold;
+    font-size: 1cm;
+    /* font-size: 32px; */
+    text-align: center;
+    max-width: 9cm;
+}
+
+.page_break{
+    margin-bottom: 7.94cm;
+}
+
+@media print{
+    @page{
+        size: 21.59cm 27.94cm;
+        margin: 0cm;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    .section_main{
+        display: none;
+    }
+
+    /* .section_print{
+        display: inline;
+        visibility: visible;
+    } */
+}

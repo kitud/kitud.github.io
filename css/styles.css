@@ -175,9 +175,9 @@
 }
 
 .content_price{
-    width: 11cm;
-    height: 3cm;
-    border: solid 1px black;
+    width: 11.5cm;
+    height: 2.7cm;
+    border: solid 1px gray;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -194,7 +194,7 @@
 
 .price{
     font-family: Futura-bold;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0 10px;
     text-align: center;
     /* max-width: 60px; */

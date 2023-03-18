@@ -87,6 +87,10 @@ function create_price(description, price_num){
         price1.classList.add("page_break");
         num = -1;
     }
+
+    if (num == 0 || num == 1){
+        price1.classList.add("new_page");
+    }
     num+= 1;
 }
 

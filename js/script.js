@@ -65,13 +65,12 @@ function generate_prices(){
             //         num_print = 1;
             //     }
             // }
-
+            if (num_print == 0 || num_print == 1) {
+                content_price.classList.add("new_page");
+            }
             if (num_print == 13){
                 content_price.classList.add("page_break");
                 num_print = -1;
-                // if (num_print == 17){
-                //     num_print = 1;
-                // }
             }
 
             const desc_price = document.createElement("p");

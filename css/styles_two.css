@@ -43,7 +43,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 3.97cm;
+    /* padding-top: 3.97cm; */
     visibility: hidden;
     /* display: none; */
 }
@@ -95,7 +95,11 @@ body{
 }
 
 .page_break{
-    margin-bottom: 7.94cm;
+    margin-bottom: 3.97cm;
+}
+
+.new_page{
+    margin-top: 3.97cm;
 }
 
 @media print{

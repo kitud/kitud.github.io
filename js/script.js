@@ -93,7 +93,7 @@ function generate_prices(){
             //     desc_price.setAttribute("style", `font-size: ${f_size}px`);
             // }
 
-            reduce_font_height(desc_price, 100);
+            reduce_font_height(desc_price, 60);
             reduce_font_width(price, 120);
 
             num_print+=1;

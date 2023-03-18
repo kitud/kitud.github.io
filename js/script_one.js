@@ -22,7 +22,6 @@ function generate_prices(){
             for (j=0; j < product.length-2; j+=1){
                 text += `${product[j]} `;
             }
-            text += '\nVARIAS REFERENCIAS';
             create_price(text, product[product.length-2]);
         }
     }

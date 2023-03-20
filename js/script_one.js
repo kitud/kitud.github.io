@@ -79,7 +79,7 @@ function create_price(description, price_num){
     desc_2.innerText = description;
     content_desc.appendChild(desc_2);
 
-    reduce_font_height(desc_2, 85);
+    reduce_font_height(desc_2, 75);
     reduce_font_width(desc_2, 580)
 }
 

@@ -48,8 +48,8 @@ function create_price(description, price_num){
     const NS = 'http://www.w3.org/2000/svg';
 
     const svg_logo = document.createElementNS(NS, 'svg');
-    svg_logo.setAttributeNS(null, 'width', '7.4cm');
-    svg_logo.setAttributeNS(null, 'height', '7.4cm');
+    svg_logo.setAttributeNS(null, 'width', '6cm');
+    svg_logo.setAttributeNS(null, 'height', '6cm');
     svg_logo.setAttributeNS(null, 'viewBox', '0 0 92.972603 92.972588');
     svg_logo.classList.add('logo_svg');
     logo.appendChild(svg_logo);
@@ -69,7 +69,8 @@ function create_price(description, price_num){
     num_price.textContent = price_num;
     cont_num_price.appendChild(num_price);
 
-    reduce_font_width(num_price, 200);
+    reduce_font_width(num_price, 130);
+    reduce_font_height(num_price, 160);
 
     const content_desc = document.createElement("div");
     content_desc.classList.add("content_desc");
@@ -80,7 +81,7 @@ function create_price(description, price_num){
     desc_2.innerText = description;
     content_desc.appendChild(desc_2);
 
-    reduce_font_height(desc_2, 70);
+    reduce_font_height(desc_2, 60);
     // reduce_font_width(desc_2, 360);
 
     if (num == 3){

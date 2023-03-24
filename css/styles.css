@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Futura-bold;
-    src: url("../src/font/Futura_Std_Bold.otf");
+    src: url("../src/font/Futura_Std_Bold.ttf");
 }
 
 *{
@@ -190,6 +190,7 @@
     font-size: 4rem;
     text-align: center;
     max-width: 270px;
+    /* font-weight: ; */
 }
 
 .price{
@@ -197,5 +198,6 @@
     font-size: 4rem;
     margin: 0 10px;
     text-align: center;
+    /* font-weight: bold; */
     /* max-width: 60px; */
 }

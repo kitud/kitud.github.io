@@ -5,7 +5,12 @@
 
 @font-face {
     font-family: Futura-bold;
-    src: url("../src/font/Futura_Std_Bold.otf");
+    src: url("../src/font/Futura_Std_Bold.ttf");
+}
+
+@font-face {
+    font-family: Futura-extra-bold;
+    src: url("../src/font/Futura_Std_Bold_.otf");
 }
 
 *{
@@ -49,12 +54,13 @@ body{
 }
 
 .price1{
-    width: 10cm;
-    height: 10cm;
+    width: 9.6cm;
+    height: 9.6cm;
     /* background-color: lightcoral; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     padding-top: 0.4cm;
     border: solid 1px gray;
@@ -62,8 +68,8 @@ body{
 
 .cont_num_price{
     position: absolute;
-    top: 0.6cm;
-    left: 1.1cm;
+    top: 0.3cm;
+    left: 0.95cm;
     width: 7.4cm;
     height: 7.4cm;
     display: flex;
@@ -73,17 +79,16 @@ body{
 }
 
 .num_price{
-    font-family: Futura-bold;
+    font-family: Futura-extra-bold;
     font-size: 5cm;
 }
 
 .content_desc{
-    width: 10cm;
+    width: 8.5cm;
     height: 2.2cm;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: lightseagreen; */
 }
 
 .desc_2{
@@ -95,11 +100,11 @@ body{
 }
 
 .page_break{
-    margin-bottom: 3.97cm;
+    margin-bottom: 4.37cm;
 }
 
 .new_page{
-    margin-top: 3.97cm;
+    margin-top: 4.37cm;
 }
 
 @media print{

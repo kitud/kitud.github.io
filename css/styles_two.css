@@ -8,11 +8,6 @@
     src: url("../src/font/Futura_Std_Bold.ttf");
 }
 
-@font-face {
-    font-family: Futura-extra-bold;
-    src: url("../src/font/Futura_Std_Bold_.otf");
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -79,7 +74,7 @@ body{
 }
 
 .num_price{
-    font-family: Futura-extra-bold;
+    font-family: Futura-bold;
     font-size: 5cm;
 }
 

@@ -69,8 +69,8 @@ function create_price(description, price_num){
     num_price.textContent = price_num;
     cont_num_price.appendChild(num_price);
 
-    reduce_font_width(num_price, 130);
-    reduce_font_height(num_price, 160);
+    reduce_font_width(num_price, 170);
+    reduce_font_height(num_price, 200);
 
     const content_desc = document.createElement("div");
     content_desc.classList.add("content_desc");
